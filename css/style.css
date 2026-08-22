@@ -38,7 +38,7 @@ a:hover {
     height: 40px;
 }
 .h-48px {
-    height: 48px;
+    height: 48px !important;
 }
 .size-logo {
     width: auto;
@@ -54,6 +54,9 @@ a:hover {
 }
 .fs-14 {
     font-size: 14px;
+}
+.fs-20 {
+    font-size: 20px;
 }
 .fs-logo {
     font-size: 24px;
