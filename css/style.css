@@ -20,12 +20,25 @@ a {
    text-decoration: none;
    color: inherit;
 }
+.a-style {
+   text-decoration: none;
+   color: #051498;
+}
 a:hover {
    text-decoration: none;
-   color: #d5d5d5;
+   color: #99a2f2;
 }
 .h-56px {
     height: 56px;
+}
+.h-84px {
+    height: 84px;
+}
+.h-40px {
+    height: 40px;
+}
+.h-48px {
+    height: 48px;
 }
 .size-logo {
     width: auto;
@@ -54,4 +67,10 @@ a:hover {
 .ratio {
     aspect-ratio: 1/1;
     object-fit: cover;
+}
+.mxw-440px {
+    max-width: 440px;
+}
+.mxw-480px {
+    max-width: 480px;
 }
