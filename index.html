@@ -43,7 +43,10 @@
     <nav class="navbar container-fluid d-flex justify-content-between align-items-center bg-dark pt-2 px-3 text-light">
 
         <!-- Brand Logo -->
-        <a href="index.html"><img src="assets/Logo/logo-bw.svg" alt="Logo" class="img-fluid size-logo"><span class="fs-logo">The Vector Studio</span></a>
+        <a href="index.html" class="d-inline-flex align-items-center">
+            <img src="assets/Logo/logo-bw.svg" alt="Logo" class="size-logo">
+            <span class="fs-logo">The Vector Studio</span>
+        </a>
             
         <!-- Navigation Links -->
             <div>
@@ -67,7 +70,6 @@
                 <button type="button" data-bs-target="#bannerCarousel" data-bs-slide-to="1"></button>
                 <button type="button" data-bs-target="#bannerCarousel" data-bs-slide-to="2"></button>
                 <button type="button" data-bs-target="#bannerCarousel" data-bs-slide-to="3"></button>
-                <button type="button" data-bs-target="#bannerCarousel" data-bs-slide-to="4"></button>
             </div>
 
             <!-- Carousel Items -->
@@ -80,9 +82,6 @@
                 </div>
                 <div class="carousel-item">
                     <img src="assets/Banners/banner-img-3.png" alt="Banner Image 3" class="d-block w-100">
-                </div>
-                <div class="carousel-item">
-                    <img src="assets/Banners/banner-img-4.png" alt="Banner Image 4" class="d-block w-100">
                 </div>
                 <div class="carousel-item">
                     <img src="assets/Banners/banner-img-5.png" alt="Banner Image 5" class="d-block w-100">
@@ -100,165 +99,216 @@
     </section>
 
     <!-- Best Selling Products -->
-    <section class="container-fluid p-0">
-        <h2 class="mt-5 mb-4">Best Selling Products</h2>
-        <hr>
-        <div>
+    <section class="container p-0 mt-5">
+        <div class="d-flex justify-content-between align-items-center mb-3">
+            <h2 class="mx-0">Best Selling Products</h2>
+            <a href="products.html" class="btn btn-dark fs-14">See all Products</a>
+        </div>
+        
+        <!-- Products are displayed in a grid layout using Bootstrap's grid system. Each product is represented by a card that includes an image, title, price, and buttons for adding to the wishlist or cart. The products are responsive and will adjust their layout based on the screen size, ensuring a user-friendly experience across devices -->
+        <div class="row g-2">
+
             <!--Product 1-->
-            <div>
-                <img src="#" alt="product 1">
-                <div>
-                    <h5>Product name</h5>
-                    <p>price</p>
-                    <button>
-                        
-                    </button>
+            <div class="col-lg-3 col-md-4 col-sm-6">
+                <div class="card px-0 radius overflow-hidden">
+                    <img src="S:\ssdi-nsda-lvl3-assessment-project-demo-practice\assets\Products\product-1.png" alt="product 1" class="card-img-top w-100 d-block ratio">
+                    <div class="card-body px-3">
+                        <h5 class="card-title">ABC Watch</h5>
+                        <p class="card-text">Price: $39.99</p>
+                        <div class="d-flex gap-2 my-2">
+                            <button class="btn btn-outline-dark w-100">Wishlist</button>
+                            <button class="btn btn-dark w-100">Add to Cart</button>
+                        </div>
+                    </div>
                 </div>
             </div>
 
             <!--Product 2-->
-            <div>
-                <img src="#" alt="product 1">
-                <div>
-                    <h5>Product name</h5>
-                    <p>price</p>
-                    <button>
-                        
-                    </button>
+            <div class="col-lg-3 col-md-4 col-sm-6">
+                <div class="card px-0 radius overflow-hidden">
+                    <img src="S:\ssdi-nsda-lvl3-assessment-project-demo-practice\assets\Products\product-2.png" alt="product 2" class="card-img-top w-100 d-block ratio">
+                    <div class="card-body px-3">
+                        <h5 class="card-title">XYZ Headphones</h5>
+                        <p class="card-text">Price: $39.99</p>
+                        <div class="d-flex gap-2 my-2">
+                            <button class="btn btn-outline-dark w-100">Wishlist</button>
+                            <button class="btn btn-dark w-100">Add to Cart</button>
+                        </div>
+                    </div>
                 </div>
             </div>
 
             <!--Product 3-->
-            <div>
-                <img src="#" alt="product 1">
-                <div>
-                    <h5>Product name</h5>
-                    <p>price</p>
-                    <button>
-                        
-                    </button>
+            <div class="col-lg-3 col-md-4 col-sm-6">
+                <div class="card px-0 radius overflow-hidden">
+                    <img src="S:\ssdi-nsda-lvl3-assessment-project-demo-practice\assets\Products\product-3.png" alt="product 3" class="card-img-top w-100 d-block ratio">
+                    <div class="card-body px-3">
+                        <h5 class="card-title">DEF Smartphone</h5>
+                        <p class="card-text">Price: $39.99</p>
+                        <div class="d-flex gap-2 my-2">
+                            <button class="btn btn-outline-dark w-100">Wishlist</button>
+                            <button class="btn btn-dark w-100">Add to Cart</button>
+                        </div>
+                    </div>
                 </div>
             </div>
 
             <!--Product 4-->
-            <div>
-                <img src="#" alt="product 1">
-                <div>
-                    <h5>Product name</h5>
-                    <p>price</p>
-                    <button>
-                        
-                    </button>
+            <div class="col-lg-3 col-md-4 col-sm-6">
+                <div class="card px-0 radius overflow-hidden">
+                    <img src="S:\ssdi-nsda-lvl3-assessment-project-demo-practice\assets\Products\product-4.png" alt="product 4" class="card-img-top w-100 d-block ratio">
+                    <div class="card-body px-3">
+                        <h5 class="card-title">GHI Laptop</h5>
+                        <p class="card-text">Price: $39.99</p>
+                        <div class="d-flex gap-2 my-2">
+                            <button class="btn btn-outline-dark w-100">Wishlist</button>
+                            <button class="btn btn-dark w-100">Add to Cart</button>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Featured Products -->
-     <section>
-        <h2>Featured Products</h2>
-        <hr>
-        <div>
+    <section class="container p-0 mt-5">
+        <div class="d-flex justify-content-between align-items-center mb-3">
+            <h2 class="mx-0">Featured Products</h2>
+            <a href="products.html" class="btn btn-dark fs-14">See all Products</a>
+        </div>
+        
+        <!-- Products are displayed in a grid layout using Bootstrap's grid system. Each product is represented by a card that includes an image, title, price, and buttons for adding to the wishlist or cart. The products are responsive and will adjust their layout based on the screen size, ensuring a user-friendly experience across devices -->
+        <div class="row g-2">
+
             <!--Product 1-->
-            <div>
-                <img src="#" alt="product 1">
-                <div>
-                    <h5>Product name</h5>
-                    <p>price</p>
-                    <button>
-                        
-                    </button>
+            <div class="col-lg-3 col-md-4 col-sm-6">
+                <div class="card px-0 radius overflow-hidden">
+                    <img src="S:\ssdi-nsda-lvl3-assessment-project-demo-practice\assets\Products\product-1.png" alt="product 1" class="card-img-top w-100 d-block ratio">
+                    <div class="card-body px-3">
+                        <h5 class="card-title">ABC Watch</h5>
+                        <p class="card-text">Price: $39.99</p>
+                        <div class="d-flex gap-2 my-2">
+                            <button class="btn btn-outline-dark w-100">Wishlist</button>
+                            <button class="btn btn-dark w-100">Add to Cart</button>
+                        </div>
+                    </div>
                 </div>
             </div>
 
             <!--Product 2-->
-            <div>
-                <img src="#" alt="product 1">
-                <div>
-                    <h5>Product name</h5>
-                    <p>price</p>
-                    <button>
-                        
-                    </button>
+            <div class="col-lg-3 col-md-4 col-sm-6">
+                <div class="card px-0 radius overflow-hidden">
+                    <img src="S:\ssdi-nsda-lvl3-assessment-project-demo-practice\assets\Products\product-2.png" alt="product 2" class="card-img-top w-100 d-block ratio">
+                    <div class="card-body px-3">
+                        <h5 class="card-title">XYZ Headphones</h5>
+                        <p class="card-text">Price: $39.99</p>
+                        <div class="d-flex gap-2 my-2">
+                            <button class="btn btn-outline-dark w-100">Wishlist</button>
+                            <button class="btn btn-dark w-100">Add to Cart</button>
+                        </div>
+                    </div>
                 </div>
             </div>
 
             <!--Product 3-->
-            <div>
-                <img src="#" alt="product 1">
-                <div>
-                    <h5>Product name</h5>
-                    <p>price</p>
-                    <button>
-                        
-                    </button>
+            <div class="col-lg-3 col-md-4 col-sm-6">
+                <div class="card px-0 radius overflow-hidden">
+                    <img src="S:\ssdi-nsda-lvl3-assessment-project-demo-practice\assets\Products\product-3.png" alt="product 3" class="card-img-top w-100 d-block ratio">
+                    <div class="card-body px-3">
+                        <h5 class="card-title">DEF Smartphone</h5>
+                        <p class="card-text">Price: $39.99</p>
+                        <div class="d-flex gap-2 my-2">
+                            <button class="btn btn-outline-dark w-100">Wishlist</button>
+                            <button class="btn btn-dark w-100">Add to Cart</button>
+                        </div>
+                    </div>
                 </div>
             </div>
 
             <!--Product 4-->
-            <div>
-                <img src="#" alt="product 1">
-                <div>
-                    <h5>Product name</h5>
-                    <p>price</p>
-                    <button>
-                        
-                    </button>
+            <div class="col-lg-3 col-md-4 col-sm-6">
+                <div class="card px-0 radius overflow-hidden">
+                    <img src="S:\ssdi-nsda-lvl3-assessment-project-demo-practice\assets\Products\product-4.png" alt="product 4" class="card-img-top w-100 d-block ratio">
+                    <div class="card-body px-3">
+                        <h5 class="card-title">GHI Laptop</h5>
+                        <p class="card-text">Price: $39.99</p>
+                        <div class="d-flex gap-2 my-2">
+                            <button class="btn btn-outline-dark w-100">Wishlist</button>
+                            <button class="btn btn-dark w-100">Add to Cart</button>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Offered Product -->
-     <section>
-        <h2>Get 50% Flat Discount</h2>
-        <hr>
-        <div>
+    <section class="container p-0 mt-5">
+        <div class="d-flex justify-content-between align-items-center mb-3">
+            <h2 class="mx-0">Best Deals</h2>
+            <a href="products.html" class="btn btn-dark fs-14">See all Products</a>
+        </div>
+        
+        <!-- Products are displayed in a grid layout using Bootstrap's grid system. Each product is represented by a card that includes an image, title, price, and buttons for adding to the wishlist or cart. The products are responsive and will adjust their layout based on the screen size, ensuring a user-friendly experience across devices -->
+        <div class="row g-2">
+
             <!--Product 1-->
-            <div>
-                <img src="#" alt="product 1">
-                <div>
-                    <h5>Product name</h5>
-                    <p>Price: <del>$12.99</del> $9.99</p>
-                    <button>
-                        
-                    </button>
+            <div class="col-lg-3 col-md-4 col-sm-6">
+                <div class="card px-0 radius overflow-hidden">
+                    <img src="S:\ssdi-nsda-lvl3-assessment-project-demo-practice\assets\Products\product-1.png" alt="product 1" class="card-img-top w-100 d-block ratio">
+                    <div class="card-body px-3">
+                        <h5 class="card-title">ABC Watch</h5>
+                        <p class="card-text">Price: <del>$39.99</del> $19.99</p>
+                        <div class="d-flex gap-2 my-2">
+                            <button class="btn btn-outline-dark w-100">Wishlist</button>
+                            <button class="btn btn-dark w-100">Add to Cart</button>
+                        </div>
+                    </div>
                 </div>
             </div>
 
             <!--Product 2-->
-            <div>
-                <img src="#" alt="product 1">
-                <div>
-                    <h5>Product name</h5>
-                    <p>Price: <del>$12.99</del> $9.99</p>
-                    <button>
-                        
-                    </button>
+            <div class="col-lg-3 col-md-4 col-sm-6">
+                <div class="card px-0 radius overflow-hidden">
+                    <img src="S:\ssdi-nsda-lvl3-assessment-project-demo-practice\assets\Products\product-2.png" alt="product 2" class="card-img-top w-100 d-block ratio">
+                    <div class="card-body px-3">
+                        <h5 class="card-title">XYZ Headphones</h5>
+                        <p class="card-text">Price: <del>$39.99</del> $19.99</p>
+                        <div class="d-flex gap-2 my-2">
+                            <button class="btn btn-outline-dark w-100">Wishlist</button>
+                            <button class="btn btn-dark w-100">Add to Cart</button>
+                        </div>
+                    </div>
                 </div>
             </div>
 
             <!--Product 3-->
-            <div>
-                <img src="#" alt="product 1">
-                <div>
-                    <h5>Product name</h5>
-                    <p>Price: <del>$12.99</del> $9.99</p>
-                    <button>
-                        
-                    </button>
+            <div class="col-lg-3 col-md-4 col-sm-6">
+                <div class="card px-0 radius overflow-hidden">
+                    <img src="S:\ssdi-nsda-lvl3-assessment-project-demo-practice\assets\Products\product-3.png" alt="product 3" class="card-img-top w-100 d-block ratio">
+                    <div class="card-body px-3">
+                        <h5 class="card-title">DEF Smartphone</h5>
+                        <p class="card-text">Price: <del>$39.99</del> $19.99</p>
+                        <div class="d-flex gap-2 my-2">
+                            <button class="btn btn-outline-dark w-100">Wishlist</button>
+                            <button class="btn btn-dark w-100">Add to Cart</button>
+                        </div>
+                    </div>
                 </div>
             </div>
 
             <!--Product 4-->
-            <div>
-                <img src="#" alt="product 1">
-                <div>
-                    <h5>Product name</h5>
-                    <p>Price: <del>$12.99</del> $9.99</p>
-                    <button>
-                        
-                    </button>
+            <div class="col-lg-3 col-md-4 col-sm-6">
+                <div class="card px-0 radius overflow-hidden">
+                    <img src="S:\ssdi-nsda-lvl3-assessment-project-demo-practice\assets\Products\product-4.png" alt="product 4" class="card-img-top w-100 d-block ratio">
+                    <div class="card-body px-3">
+                        <h5 class="card-title">GHI Laptop</h5>
+                        <p class="card-text">Price: <del>$39.99</del> $19.99</p>
+                        <div class="d-flex gap-2 my-2">
+                            <button class="btn btn-outline-dark w-100">Wishlist</button>
+                            <button class="btn btn-dark w-100">Add to Cart</button>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -266,48 +316,45 @@
      
 
     <!-- Big Footer -->
-     <footer>
-        <div>
-            <div>
-                <img src="#" alt="">
-                <h4>Nqme</h4>
-                <p>hdbf</p>
-                <div>
-                    <span>
-                        <a href="#"></a>
-                    </span>
-                    <span>
-                        <a href="#"></a>
-                    </span>
-                    <span>
-                        <a href="#"></a>
-                    </span>
+     <footer class="container-fluid pt-5 mt-5 bg-dark text-light">
+        <div class="d-flex flex-row align-items-top justify-content-between px-1 pb-3">
+            <div class="row col-5">
+                <div class="d-flex gap-1 align-items-center">
+                    <img src="assets/Logo/logo-bw.svg" alt="The Vector Studio Logo" class="footer-logo">
+                    <h4 class="mb-0">The Vector Studio</h4>
+                </div>
+                <p class="mb-0">Your one-stop destination for premium apparel and modern lifestyle essentials. Designed for quality, crafted for comfort</p>
+
+                <div class="d-flex gap-4 align-items-center">
+                    <a href="facebook.com" class="text-light fs-4"><i class="bi bi-facebook"></i></a>
+                    <a href="whatsapp.com" class="text-light fs-4"><i class="bi bi-whatsapp"></i></a>
+                    <a href="instagram.com" class="text-light fs-4"><i class="bi bi-instagram"></i></a>
                 </div>
             </div>
-            <div>
-                <ul>
-                    <li><a href="#">dummy txt</a></li>
-                    <li><a href="#">dummy txt</a></li>
-                    <li><a href="#">dummy txt</a></li>
-                    <li><a href="#">dummy txt</a></li>
-                    <li><a href="#">dummy txt</a></li>
+            <div class="col-3 align-items-center">
+                <ul class="list-unstyled d-flex flex-column gap-3 text-center">
+                    <li class="h-40px"><a href="index.html">Home</a></li>
+                    <li class="h-40px"><a href="products.html">Products</a></li>
+                    <li class="h-40px"><a href="cart.html">Cart</a></li>
+                    <li class="h-40px"><a href="login.html">login</a></li>
+                    <li class="h-40px"><a href="signup.html">Sign Up</a></li>
                 </ul>
             </div>
-            <div>
-                <h4></h4>
-                <p></p>
-                <div>
-                    <input type="text">
-                    <button>Suubscribe</button>
+            <div class="col-4">
+                <h4>Newsletter</h4>
+                <p>Subscribe to our newsletter for the latest updates and offers.</p>
+                <div class="d-flex flex-column gap-3 align-items-center">
+                    <input type="email" placeholder="Enter your email" class="form-control w-100 h-56px">
+                    <button class="btn btn-light w-100 h-48px">Subscribe</button>
                 </div>
             </div>
         </div>
         <hr>
 
         <!-- Footer -->
-        <div>
+        <div class="d-flex flex-row align-items-center justify-content-between fs-14 px-1">
             <p>&copy; Copyright Restricted!</p>
-            <p>Developed by <a href="#">Rayhan Ahmed</a></p>
+            <p>Developed by <a href="https://github.com/rayhan09niloy" class="text-light">Rayhan Ahmed</a></p>
             <p id="datetime2">Date and Time</p>
         </div>
      </footer>

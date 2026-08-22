@@ -33,6 +33,12 @@ a:hover {
     aspect-ratio: 1/1;
     object-fit: contain;
 }
+.footer-logo {
+    width: auto;
+    height: 56px;
+    aspect-ratio: 1/1;
+    object-fit: contain;
+}
 .fs-14 {
     font-size: 14px;
 }
@@ -41,4 +47,11 @@ a:hover {
     margin-bottom: 0;
     letter-spacing: 0.5px;
     font-weight: 600;
+}
+.radius {
+    border-radius: 12px !important;
+}
+.ratio {
+    aspect-ratio: 1/1;
+    object-fit: cover;
 }
