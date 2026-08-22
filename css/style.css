@@ -77,3 +77,6 @@ a:hover {
 .mxw-480px {
     max-width: 480px;
 }
+.text-color-not-important {
+    color: #292929 !important;
+}
