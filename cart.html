@@ -68,6 +68,72 @@
         </ol>
     </nav>
 
+    <!-- Overview of the cart section -->
+    <section class="container mt-4">
+        <h2>Shopping Cart</h2>
+        
+        <!-- Table to display cart items -->
+        <div class="table-responsive">
+            <table class="table table-bordered table-hover align-middle">
+                <thead>
+                    <tr>
+                        <th scope="col" class="text-center">SL</th>
+                        <th scope="col">Image</th>
+                        <th scope="col">Product</th>
+                        <th scope="col" class="text-center">Quantity</th>
+                        <th scope="col">Price</th>
+                        <th scope="col">Total</th>
+                    </tr>
+                </thead>
+                
+                <!-- Cart items will be added here -->
+                <tbody id="cart-items">
+                    <tr>
+                        <td class="text-center">1</td>
+                        <td><img src="S:\ssdi-nsda-lvl3-assessment-project-demo-practice\assets\Products\product-1.png" alt="Product 1" class="img-fluid img-thumbnail size-100px"></td>
+                        <td>Product 1</td>
+                        <td class="text-center">1</td>
+                        <td>$29.99</td>
+                        <td>$29.99</td>
+                    </tr>
+                    <tr>
+                        <td class="text-center">2</td>
+                        <td><img src="S:\ssdi-nsda-lvl3-assessment-project-demo-practice\assets\Products\product-2.png" alt="Product 2" class="img-fluid img-thumbnail size-100px"></td>
+                        <td>Product 2</td>
+                        <td class="text-center">2</td>
+                        <td>$39.99</td>
+                        <td>$79.98</td>
+                    </tr>
+                </tbody>
+
+                <!-- Cart summary -->
+                <tfoot>
+                    <tr>
+                        <td colspan="5" class="text-end"><strong>Grand Total:</strong></td>
+                        <td id="grand-total">$109.97</td>
+                    </tr>
+                </tfoot>
+
+            </table>
+
+        </div>
+    </section>
+
+    <!-- Coupon code section -->
+    <section class="container mt-4">
+        <h2>Apply Coupon Code</h2>
+        <p>Enter your coupon code below to receive a discount on your order.</p>
+        <div class="row">
+            <div class="col-md-5">
+                <div class="input-group h-56px">
+                    <input type="text" class="form-control" placeholder="Enter coupon code">
+                    <button class="btn btn-outline-dark">Apply</button>
+                </div>
+                <button class="btn btn-dark mt-2 w-100 h-48px" type="submit" onclick="alert('Confirmed!')">Proceed to Checkout</button>
+            </div>
+        </div>
+    </section>
+
     <!-- Big Footer -->
     <footer class="container-fluid pt-5 mt-5 bg-dark text-light">
         <div class="d-flex flex-row align-items-top justify-content-between px-1 pb-3">

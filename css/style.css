@@ -80,3 +80,8 @@ a:hover {
 .text-color-not-important {
     color: #292929 !important;
 }
+.size-100px {
+    width: 100px;
+    height: 100px;
+    aspect-ratio: 1/1;
+}
